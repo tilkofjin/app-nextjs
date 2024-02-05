@@ -7,14 +7,14 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Evently",
   description: "Evently is a plathform for event management",
-  icons:{
-    icon:'/assets/images/logo.svg'
+  icons: {
+    icon: '/assets/images/logo.svg'
   }
 };
 export const poppins = Poppins({
   subsets: ["latin"],
-  weight:['400','500','600','700'],
-  variable:'--font-poppins'
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins'
 })
 export default function RootLayout({
   children,
@@ -23,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body className={poppins.variable}>{children}</body>
-    </html>
+      <html lang="en">
+        <body className={poppins.variable}>{children}</body>
+      </html>
     </ClerkProvider>
   );
 }
